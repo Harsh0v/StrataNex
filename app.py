@@ -26,7 +26,7 @@ div[data-baseweb="select"]{min-height:48px}
 </style>
 """, unsafe_allow_html=True)
 
-DATA=Path(__file__).parent/"data"/"pilot_segments.csv"
+DATA=Path(__file__).parent/"pilot_segments.csv"
 
 @st.cache_data
 def load(): return pd.read_csv(DATA)
