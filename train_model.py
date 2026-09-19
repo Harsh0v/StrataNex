@@ -11,14 +11,20 @@ print("Dataset loaded successfully!")
 print("Total records:", len(df))
 print("Columns:", df.columns.tolist())
 
-# Create simple training features from available location data
+# Create training features from available location data
 X = df[["latitude", "longitude"]].copy()
 
-# Prototype risk labels based on latitude/longitude distribution
-# NOTE: These are demonstration labels, not official GSI risk classes.
-df["risk"] = (
-    (df["latitude"] * 0.7 + df["longitude"] * 0.3)
-    > (df["latitude"] * 0.7 + df["longitude"] * 0.3).median()
+# Create 4 prototype risk classes for ML training
+risk_score = (
+    df["latitude"].rank(pct=True) * 0.5 +
+    df["longitude"].rank(pct=True) * 0.5
+)
+
+df["risk"] = pd.qcut(
+    risk_score,
+    q=4,
+    labels=[1, 2, 3, 4],
+    duplicates="drop"
 ).astype(int)
 
 y = df["risk"]
