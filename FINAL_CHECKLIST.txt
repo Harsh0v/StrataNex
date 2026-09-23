@@ -1,0 +1,12 @@
+STRATANEX FINAL SUBMISSION CHECKLIST
+
+[ ] Copy gsi_ner_landslides.csv from the tested working project folder.
+[ ] Copy landslide_model.pkl from the tested working project folder.
+[ ] Copy pilot_segments.csv if the app uses it.
+[ ] Do NOT add .env to the ZIP.
+[ ] Rotate the old ORS API key before public deployment.
+[ ] On the demo laptop, keep .env locally with the new ORS key.
+[ ] Run: pip install -r requirements.txt
+[ ] Run: streamlit run app.py
+[ ] Verify dashboard/maps load.
+[ ] Verify SafeRoute returns route, distance/time and GSI screening.
