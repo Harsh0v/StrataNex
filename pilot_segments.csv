@@ -1,0 +1,11 @@
+segment,state,lat,lon,slope_deg,historical_density
+Sikkim-S1,Sikkim,27.33,88.62,41,6.5
+Sikkim-S2,Sikkim,27.29,88.55,52,8.2
+Arunachal-A1,Arunachal Pradesh,27.1,93.62,37,5.1
+Arunachal-A2,Arunachal Pradesh,27.23,93.73,48,7.7
+Nagaland-N1,Nagaland,25.67,94.11,33,4.8
+Nagaland-N2,Nagaland,25.75,94.18,44,6.9
+Meghalaya-M1,Meghalaya,25.57,91.88,29,3.7
+Meghalaya-M2,Meghalaya,25.48,92.05,39,5.8
+Mizoram-Z1,Mizoram,23.73,92.72,43,6.2
+Manipur-P1,Manipur,24.82,93.95,36,5.4
